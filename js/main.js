@@ -139,7 +139,13 @@ function m_chk_input()
 		return false;
 	}
 
-	if ($('#clause_agree').is(":checked") == false)
+	if ($('#use_agree').is(":checked") == false)
+	{
+		alert("개인정보 활용 동의를 안 하셨습니다");
+		setTimeout("agree_data();",500);
+		return false;
+	}
+	if ($('#adver_agree').is(":checked") == false)
 	{
 		alert("개인정보 활용 동의를 안 하셨습니다");
 		setTimeout("agree_data();",500);
