@@ -1,6 +1,6 @@
 <?
 	// 유입매체 정보 입력
-	function BC_InsertTrackingInfo($media, $gubun)
+	function BB_InsertTrackingInfo($media, $gubun)
 	{
 		global $_gl;
 		global $my_db;
@@ -10,7 +10,7 @@
 	}
 
 	// 난수 생성
-	function BC_SerialNumber()
+	function BB_SerialNumber()
 	{
 		/*
 		srand(time());

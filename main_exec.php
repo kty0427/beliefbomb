@@ -4,15 +4,15 @@ include_once "config.php";
 switch ($_REQUEST['exec'])
 {
 	case "insert_event" :
-		$mb_name		= $_REQUEST['mb_name'];
+		$mb_name	= $_REQUEST['mb_name'];
 		$mb_phone1	= $_REQUEST['mb_phone1'];
 		$mb_phone2	= $_REQUEST['mb_phone2'];
 		$mb_phone3	= $_REQUEST['mb_phone3'];
-		$shop			= $_REQUEST['shop'];
+		$mb_addr	= $_REQUEST['mb_addr'];
 		$mb_phone = $mb_phone1."-".$mb_phone2."-".$mb_phone3;
-		$serialNumber	= BC_SerialNumber();
+		$serialNumber	= BB_SerialNumber();
 
-		$chk_member	= BC_memberChk($mb_phone);
+		$chk_member	= BB_memberChk($mb_phone);
 
 		if ($chk_member == 0)
 		{

@@ -65,7 +65,7 @@
             </ul>
           </div>
           <div class="btn_block">
-            <a href="#" onclick="javascript:chk_input();return false;"><img src="images/popup/btn_input_ok.png" alt=""/></a>
+            <a href="#" onclick="javascript:m_chk_input();return false;">확인</a>
           </div>
         </div><!--inner-->
     </div>
